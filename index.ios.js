@@ -7,13 +7,13 @@
 import React, { Component } from 'react';
 import { AppRegistry, StyleSheet, Text, View } from 'react-native';
 
-import { SimpleComponent1, TextInputComponent, SliderComponent, PickerComponent, SwitchComponent } from './app/index';
+import {FlexComponent2, FlexComponent, SimpleComponent1, TextInputComponent, SliderComponent, PickerComponent, SwitchComponent, StyledComponent } from './app/index';
 
 export default class simple_component extends Component {
   render() {
     return (
-      <View style={styles.container}>
-        <SwitchComponent />
+      <View>
+        <FlexComponent2 />
       </View>
     );
   }
@@ -25,6 +25,10 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#F5FCFF'
+  },
+  container1:{
+    justifyContent: 'center',
+    marginTop: 250
   }
 });
 
